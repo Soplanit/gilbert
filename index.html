@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biografi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="logo"></a>
+        <ul class="nav-links">
+          <li><a href="#tentang">Biografi</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#hobi">Hobi</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero fade-in">
+      <div class="hero-content">
+        <h1>gilbert soplanit</h1>
+        <p class="tagline">Mahasiswa Informatika</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section fade-in" id="tentang">
+        <h2>Biografi</h2>
+        <div class="content">
+          <img src="gambar/profil.jpeg" alt="Foto Ferly" class="profile-img" />
+          <p>
+            Nama: gilbert soplanit Tempat, Tanggal Lahir: ambon 27 april 2003 adalah seorang pemuda yang lahir latalola besar pada tanggal 04 ktober 2003. Ia dikenal sebagai pribadi yang aktif dan memiliki minat dalam berbagai
+            kegiatan kreatif dan olahraga. Sejak kecil, gilbert menunjukkan ketertarikan dalam menggambar dan bermain sepak bola. Dua hobi ini menjadi bagian penting dalam kehidupannya. Dalam perjalanan pendidikannya, karlos menempuh
+            pendidikan dasar di sd kristen lalola besar, melanjutkan ke SMP Kristen dobo, lalu menyelesaikan pendidikan menengah atas di SMA kristen dobo. Setelah lulus, ia melanjutkan studi di Universitas Kristen Indonesia Maluku (UKIM).
+            karlos dikenal sebagai sosok yang tekun, bersahaja, dan memiliki semangat tinggi dalam belajar maupun berkarya. Ia bercita-cita untuk terus berkembang dan memberi kontribusi positif bagi lingkungan sekitarnya.
+          </p>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="pendidikan">
+        <h2>Pendidikan</h2>
+        <ul class="list">
+          <li><strong>2023 - Sekarang:</strong> Universitas Kristen Indonesia Maluku - Fakultas Ilmu Komputer</li>
+          <li><strong>2020 - 2023:</strong> SMA Kristen Dobo</li>
+          <li><strong>2017 - 2020:</strong> SMP Kristen Dobo</li>
+          <li><strong>2012 - 2017:</strong> SD Kristen Latalola Besar</li>
+        </ul>
+      </section>
+
+      <section class="section fade-in" id="hobi">
+        <h2>Hobi</h2>
+        <p>bermain bola voly dan futsal</p>
+      </section>
+
+      <section class="section fade-in" id="kontak">
+        <h2>Kontak</h2>
+        <div class="contact-list">
+          <a href="mailto:gilbertsoplanit27@gmail.com" class="contact-item" target="_blank"> ✉️ Email:gilbertsoplanit27@gmail.com </a>
+          <a href="https://wa.me/081262455930" class="contact-item" target="_blank"> 📱 WhatsApp: 081262455930</a>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Scroll progress bar
+      window.onscroll = function () {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('progressBar').style.width = scrolled + '%';
+
+        // Show scroll top button
+        document.getElementById('scrollTopBtn').style.display = winScroll > 300 ? 'block' : 'none';
+      };
+
+      // Scroll to top
+      document.getElementById('scrollTopBtn').onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Dark mode toggle
+      function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+      }
+    </script>
+  </body>
+</html>
